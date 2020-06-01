@@ -1,6 +1,15 @@
-1通过yum将vim升级至vim8：
+1 通过yum将vim升级至vim8：
 	rpm -Uvh http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch.rpm
 	rpm --import http://mirror.ghettoforge.org/distributions/gf/RPM-GPG-KEY-gf.el7
 	yum -y remove vim-minimal vim-common vim-enhanced sudo
 	yum -y --enablerepo=gf-plus install vim-enhanced sudo
 	
+2 Linux + github
+	yum -y install git 
+	git config --global user.name "git的用户名"
+	git config --global user.email "git的邮箱"
+	ssh-keygen -t rsa -C "git的邮箱"
+	cat "你的密钥保存地址，(看终端上面显示)"
+	"复制密钥（最后的邮箱 不要复制）"
+	"回到浏览器登陆github，---settings--SSH and GPG keys--- 粘贴----New SSH key"
+
