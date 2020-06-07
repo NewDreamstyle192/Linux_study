@@ -25,3 +25,5 @@
 	"vundle等插件管理器
 	"程序在vim里面的快捷编译
 	------------------------------------------------------------暂时先配置最基础的vimrc(语法高亮，甚至还没有自动补全)
+4 插件管理器 Vundle/vim-plug【目前处于初学阶段还是使用vundle妥当，日后再说vim-plug】
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
