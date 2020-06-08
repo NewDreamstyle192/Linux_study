@@ -27,3 +27,11 @@
 	------------------------------------------------------------暂时先配置最基础的vimrc(语法高亮，甚至还没有自动补全)
 4 插件管理器 Vundle/vim-plug【目前处于初学阶段还是使用vundle妥当，日后再说vim-plug】
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	"安装插件：直接在vimrc里面 :PluginInstall / 命令行：vim +PlugInstall +qall
+	"查看插件：：PlugList
+	
+5 代码自动补全YCM插件由于需要的东西太多，暂时不敢瞎几把安装
+6 升级至python3，同样暂时不装
+
+7 一建编译及调试(非常重要)
+
