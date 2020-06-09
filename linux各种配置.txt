@@ -33,5 +33,28 @@
 5 代码自动补全YCM插件由于需要的东西太多，暂时不敢瞎几把安装
 6 升级至python3，同样暂时不装
 
-7 一建编译及调试(非常重要)
+7 gcc编译及调试
+	gcc -c hello.c 			将会自动产生helloc.o这个文件但是不会产生二进制执行文件，根据操作环境给与最佳执行速度
+	gcc -o hello.exe hello.c       -o后面跟着的是将要输出的二进制文件名 
+	
 
+	1: 主子程序链接：子程序的编译---
+	gcc -c "...c/cpp"将产生目标文件(...o)，可以不包含main函数
+	gcc -o "...o" 便可以更好的编译
+	2：调用外部的函数库：加入链接的函数库
+	"首先注意在linux下 函数库是默认放在 usr/lib和usr、lib64中的 gcc后面就不要再追加-L/lib -L、lib64了	
+	gcc -o producer_consumer.exe producer_consumer.c -lpthread(在最后加上 -l+函数库) 
+
+8 make宏编译
+	vim makefile
+	"然后编写makefile（main:, clean: 还可以使用变量！）
+	make
+	make clean main / make main /make clean
+	"即可完成编译	
+----------------------"2020 06 09"
+----------------------接下来就是python这个重头戏！
+9 vim快捷编译及调试
+
+	
+	
+		
