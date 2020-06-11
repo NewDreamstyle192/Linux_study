@@ -55,6 +55,13 @@
 ----------------------接下来就是python这个重头戏！
 9 vim快捷编译及调试
 
+10 wget下载命令：https://linuxize.com/post/wget-command-examples/
+	wget [options] [url]
+	wget url: 直接安装在当前工作目录
+	wget -p "file_path" url :安装在指定目录
+	
+
+
 	
 	
 		
