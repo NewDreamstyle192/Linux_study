@@ -1,1 +1,7 @@
-
+1 pip's (install PATH) problem:
+    python2 is the default version of python on centos7,so pip2 is default version, but we need all 3.x!!
+    i did the following test:
+      $ pip install virtualenv
+      $ pip show virtualenv
+      
+    
