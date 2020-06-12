@@ -1,6 +1,6 @@
 参考：https://blog.csdn.net/zhongranxu/article/details/79859234?utm_medium=distribute.pc_relevant.none-task-blog-baidujs-1  
 
-  ==wget + 官网压缩包地址==  
+  wget + 官网压缩包地址  
   tsr -xf python-X.X.X.tgz  
   cd python-x.x.x  
   mkdir usr/python-x.x.x  
