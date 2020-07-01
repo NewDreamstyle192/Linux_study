@@ -20,33 +20,33 @@
 ### 3 Linux + DB
 #### 3-1 MySql
 ```
-  yum -y install mariadb-server mariadb
-  systemctl start mariadb
-  systemctl status mariadb
-  mysql
+  	yum -y install mariadb-server mariadb
+  	systemctl start mariadb
+  	systemctl status mariadb
+  	mysql
 ```
 ### 4 Account Management
 ```
 	$cat /etc/passwd /etc/group /etc/gshadow
--------Check 'mysql' account
+1-Check 'mysql' account
 	$grep 'mysql' cat /etc/passwd /etc/group /etc/gshadow
--------Check supported groups(first group is effective group)
+2-Check supported groups(first group is effective group)
 	$groups
--------Change effective group between supported groups
+3-Change effective group between supported groups
 	$newgrp 'target_group_name'
 	$group
 	......
 	$exit  #exit the env of newgrp
--------Add/delete account
+4-Add/delete account
 	$useradd
 	$passwd / $echo "your_passwd" | passwd --stdin username
 	$chage
 	$userdel [-r] username
 	$id
--------Add/delete group
+5-Add/delete group
 	$groupadd
 	$groupmod
--------ACL:
+6-ACL:
 	$getfacl
 	$setfacl
 	
