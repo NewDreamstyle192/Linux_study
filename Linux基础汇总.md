@@ -25,3 +25,29 @@
   systemctl status mariadb
   mysql
 ```
+### 4 Account Management
+```
+	$cat /etc/passwd /etc/group /etc/gshadow
+-------Check 'mysql' account
+	$grep 'mysql' cat /etc/passwd /etc/group /etc/gshadow
+-------Check supported groups(first group is effective group)
+	$groups
+-------Change effective group between supported groups
+	$newgrp 'target_group_name'
+	$group
+	......
+	$exit  #exit the env of newgrp
+-------Add/delete account
+	$useradd
+	$passwd / $echo "your_passwd" | passwd --stdin username
+	$chage
+	$userdel [-r] username
+	$id
+-------Add/delete group
+	$groupadd
+	$groupmod
+-------ACL:
+	$getfacl
+	$setfacl
+	
+```
