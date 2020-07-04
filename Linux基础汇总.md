@@ -27,6 +27,15 @@
 ```
 ### 4 Account Management
 ```
+example:
+	$grpadd group_name
+	$useradd -u -g group_name username
+	$mkdir /srv/project
+	$chgrp group_name /srv/project
+	$chmod .... /srv/project
+```
+------------------------------------------------------------
+```
 	$cat /etc/passwd /etc/group /etc/gshadow
 1-Check 'mysql' account
 	$grep 'mysql' cat /etc/passwd /etc/group /etc/gshadow
@@ -38,14 +47,17 @@
 	......
 	$exit  #exit the env of newgrp
 4-Add/delete account
-	$useradd
-	$passwd / $echo "your_passwd" | passwd --stdin username
-	$chage
+	$useradd [-u] [-g] username
+	$usermod 
 	$userdel [-r] username
-	$id
-5-Add/delete group
+	-------------------------------------------------------------------
+	$passwd / $echo "your_passwd" | passwd --stdin username
+	$chage     			   : list all parameters of passwd
+	$id / grep uaername /etc/passwd	   : check UID/GID etc..
+5-Add/delete group	
 	$groupadd
 	$groupmod
+	$groupdel
 6-ACL:
 	$getfacl
 	$setfacl
