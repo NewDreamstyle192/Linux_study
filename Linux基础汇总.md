@@ -46,6 +46,9 @@ example:
 	$group
 	......
 	$exit  #exit the env of newgrp
+```
+-----------------------------------------------------------
+```
 4-Add/delete account
 	$useradd [-u] [-g] username
 	$usermod 
@@ -54,11 +57,17 @@ example:
 	$passwd / $echo "your_passwd" | passwd --stdin username
 	$chage     			   : list all parameters of passwd
 	$id / grep uaername /etc/passwd	   : check UID/GID etc..
+```
+-------------------------------------------------------------
+```
 5-Add/delete group	
 	$groupadd
 	$groupmod
 	$groupdel
-6-ACL:
+```
+-------------------------------------------------------------
+```
+6-ACL: [Set exclusive permissions for a specific account]
 	$getfacl
 	$setfacl
 	
