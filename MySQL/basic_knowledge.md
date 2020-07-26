@@ -15,6 +15,24 @@
 查看当前文件夹： select database();
 
 1增====:create table 'name' (id int, name char);
+        例子1: enum枚举, set集合, null/default约束条件, unique key约束条件
+        create table consumer(
+                id int unique, 
+                name char(16),
+                sex enum('male', 'female', 'other') not null default 'other',
+                level enum('vip1', 'vip2', 'vip3'),
+                hobbies set('music', 'reading', 'gym', 'games')
+        );
+        例子2: unique key 联合唯一[socket et.]
+        create table services(
+                id int,
+                ip char(15),
+                port int,
+                unique(id),
+                unique(ip, port)
+        );
+        例子3: primary key 单列主键， 复合主键 [not null unique, innodb引擎必须存在至少一个primary]
+                用法和unique基本一致
 2查====:show create table 'name';
         show tables;
         desc 'name';     输出的信息更加的结构化
