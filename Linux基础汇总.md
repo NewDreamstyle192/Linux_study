@@ -72,3 +72,13 @@ example:
 	$setfacl
 	
 ```
+### 5 internet
+```
+	$ifconfig
+	$hostname
+	
+	$ cd /etc/sysconfig/network-scripts/...
+	$ vim /etc/hostname
+	$ vim /etc/hosts
+
+```
